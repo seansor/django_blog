@@ -94,7 +94,7 @@ if development:
         }
     }
 else:
-    DATABASES = { 'default': dj_database_url.parse(os.getenv("HOSTNAME")}
+    DATABASES = { 'default': dj_database_url.parse(os.getenv("HOSTNAME"))}
 
 
 # Password validation
