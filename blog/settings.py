@@ -16,7 +16,7 @@ import dj_database_url
 from dotenv import load_dotenv
 load_dotenv()
 
-if os.getenv("DEBUG"):
+if os.getenv("DEVELOPMENT"):
     development = True
 else:
     development = False
@@ -32,7 +32,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = development
 
 
 # Make sure to use your own hostname here, and/or use`127.0.0.1` for
